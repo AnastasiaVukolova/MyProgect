@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3e17e79d-8f0e-441a-9bc8-a88428fba5bf" name="UMLUseCaseDiagram1" linkedPackageId="ebb343c0-bfcc-46e0-9b0d-bf846289bc94" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="9000a64f-bcaa-42c8-bda5-c85ada43ab06">
+      <profileInstance Id="07ce4661-2b93-4d18-b4d1-0c937d5b3674" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cb9eb85d-b0c7-4420-9d72-498bd846ebbd">
+      <profileInstance Id="61647566-1099-4266-a664-c1453d82e490" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="61c30942-ddf7-4c79-8cc8-5548bbb3c578" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76d7496c-4d65-4f73-abac-b74bd0f2f7d6" />
+        <targetEnds>
+          <association Id="9638a411-d1e7-4a02-9d29-31295663e8c9" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Війти до свого профілю" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a753544c-25cd-4de7-a1fb-589946cbc5f5" LastKnownName="Війти до свого профілю" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="397a0ac4-ff14-4a5f-ae0c-272260d1776c" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="da78039b-d8bc-4e95-85b2-0c6ed5e1c5c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="466729ac-fa4b-4c41-9fa6-c05d102953c7" name="Війти до свого профілю" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13762335-83e7-45f4-a6b0-6ecbf6db84cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="605db60e-dc20-404e-a70a-6aac58d11f25" />
+          </association>
+          <association Id="f2dab171-4880-4666-ad07-207289f2f9cb" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Прийняти фільм у клієнта" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="54299892-1b40-4e04-9496-53ed4866cee1" LastKnownName="Прийняти фільм у клієнта" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0007deb3-70ea-452e-bb82-fffa4ff2f49c" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9fe2e6b2-fe8b-4f0a-a593-baca6ed04533" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d7a42c2-c396-455a-9a02-c6303492f9ba" name="Прийняти фільм у клієнта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b256d8ed-633b-41ab-bdfb-795a984de5e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f0cdebbb-3313-4d8d-ab1f-16679dc2b6d6" />
+          </association>
+          <association Id="974fd2be-2147-4185-b5fd-58671c8ba8ed" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Видати клієнту фільм" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4342228b-1e26-4070-ae20-ee609bbdae43" LastKnownName="Видати клієнту фільм" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a8c763c2-c7bd-4435-a4ee-a1a4929f2c7c" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="34d0b3f7-202d-4893-b5c2-47bc12498799" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7de71f3f-dfe0-432e-87c8-7c2ad64dd8d1" name="Видати клієнту фільм" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="11ddb7ab-c1f7-4c3b-a76a-f27ba6fbb3fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e89a4a8-ba8f-4679-ac5d-e3d913b55241" />
+          </association>
+          <association Id="8b64ac4c-a6f9-40a9-8591-4d50781a602b" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Прийняти заявку у клієнта" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5dd87782-3f21-4b03-9d27-1277a7b20b52" LastKnownName="Прийняти заявку у клієнта" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="290414e9-c14c-4a37-8f45-cf1db139dd2b" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="997510fb-d3aa-49ee-9240-81bdcfddaaff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be5ed606-66bc-4afa-84ee-2550cd132c5a" name="Прийняти заявку у клієнта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="86006def-5377-477b-9ef0-7da3afa6fb8c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="34043415-c554-4499-be14-4eb3142933ac" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a753544c-25cd-4de7-a1fb-589946cbc5f5" name="Війти до свого профілю" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcd70d5e-f0ff-498f-8707-49add202d941" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c7f36cc4-fc60-4597-a0f1-9d3f9e83d35b" name="Зареєструватися" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6335be7f-d42b-4958-8a2f-d19e0c359f97" />
+        <extendedCases>
+          <extend Id="2d883cdc-95bf-43ac-a092-dd218b9873bc">
+            <useCaseMoniker Id="a753544c-25cd-4de7-a1fb-589946cbc5f5" LastKnownName="Війти до свого профілю" />
+            <elementDefinition Id="796d3dd7-b207-4091-8993-932c75dca515" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54299892-1b40-4e04-9496-53ed4866cee1" name="Прийняти фільм у клієнта" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b53484aa-794e-4d93-bf0c-51875bfb0b31" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5dd87782-3f21-4b03-9d27-1277a7b20b52" name="Прийняти заявку у клієнта" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5395f1a6-3f02-48a2-9baf-01f095c829a8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4342228b-1e26-4070-ae20-ee609bbdae43" name="Видати клієнту фільм" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99bc12c6-8d08-414d-b984-3e061a178c8e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0ee3ce1c-35fc-4734-bf4b-27acc4e9adac" name="Клієнт" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc319b2e-2caa-4c0d-aeed-497160684732" />
+        <targetEnds>
+          <association Id="d87d5f53-106e-4f49-9f9e-2234a81e0287" isDerived="false" sourceEndRoleName="Клієнт" targetEndRoleName="Війти до свого профілю" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="70b8a26b-0ede-4e24-b47e-b9850aa48bcd" LastKnownName="Війти до свого профілю" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16cdb028-bd6d-4775-be6a-aefe776ac964" name="Клієнт" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d2021966-0961-47a5-982a-d9398db6648b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7bb959ab-81dd-456b-b48b-b1b766ae940b" name="Війти до свого профілю" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="027e4d3a-72f4-4e47-bb9d-1575b1a1d576" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="75ae3c25-0edc-4473-b838-f3076bbd1141" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="70b8a26b-0ede-4e24-b47e-b9850aa48bcd" name="Війти до свого профілю" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb23fe30-f66d-4616-9e4a-fe1d5ff8a149" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="ebb343c0-bfcc-46e0-9b0d-bf846289bc94" name="ClassDiagram">
+    <elementDefinition Id="47516368-5e28-436d-ba47-bb29ea4937aa" />
+  </package>
+</useCaseModelRoot>

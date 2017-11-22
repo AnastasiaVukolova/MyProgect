@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B99095D-E8DC-4F46-B3B9-5FFDAE0F544E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Курсовая</RootNamespace>
+    <AssemblyName>Курсовая</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="0.StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.StartPage.Designer.cs">
+      <DependentUpon>0.StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4.Rent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4.Rent.Designer.cs">
+      <DependentUpon>4.Rent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Film.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Film.Designer.cs">
+      <DependentUpon>2.Film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs" />
+    <Compile Include="1.AdminFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.AdminFeatures.Designer.cs">
+      <DependentUpon>1.AdminFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Disk.cs" />
+    <Compile Include="3.ChooseFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.ChooseFilm.Designer.cs">
+      <DependentUpon>3.ChooseFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="0.Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.Register.Designer.cs">
+      <DependentUpon>0.Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalDisk.cs" />
+    <EmbeddedResource Include="0.StartPage.resx">
+      <DependentUpon>0.StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.Rent.resx">
+      <DependentUpon>4.Rent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.ChooseFilm.resx">
+      <DependentUpon>3.ChooseFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.AdminFeatures.resx">
+      <DependentUpon>1.AdminFeatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Film.resx">
+      <DependentUpon>2.Film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="0.Register.resx">
+      <DependentUpon>0.Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

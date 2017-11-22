@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f16fd2b0-452d-4094-8606-d0c100955091" name="UMLClassDiagram1" linkedPackageId="af9e4d14-36a9-4468-bf1c-e6f87980d32f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b4b44253-f102-4b37-81d2-6359e2d9a2f8">
+      <profileInstance Id="dc9b21c8-282c-4dd3-ad69-36f17294e6d9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0408cc2f-e97f-49a8-84b4-d30ae9d2469a">
+      <profileInstance Id="e100731e-72d3-4565-a499-93538e9177e6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="f725423c-3319-4ffd-b0e0-f79bce40a398" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9b2e3585-8143-49bb-aa4a-3f7b21bdabd2" name="Admin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f36f1bee-2c65-4db4-9d97-e39436f9f756" />
+        <ownedAttributesInternal>
+          <property Id="1c2c5b3e-d03f-4a9f-aee9-1d159f6daf51" name="FIO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d349281-2332-4878-9d3d-39ea1b65c4b8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f725423c-3319-4ffd-b0e0-f79bce40a398" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="40303bf4-b4cd-4f49-8b7f-1a62b37201f1" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b42ec976-d55b-4351-9a83-c0d461c7389e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f725423c-3319-4ffd-b0e0-f79bce40a398" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="510aef83-1fa7-450c-a85a-408b53ddf411" name="Password" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d8869a07-a9c7-4289-8e65-99da6f1e6821" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f725423c-3319-4ffd-b0e0-f79bce40a398" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="4a4298df-ce65-4237-b4c0-ba114b80d0de" name="Admin" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="35a7cb3e-7c8b-48de-b3db-26fda14ad573" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1efec92e-fd17-462b-b8e4-b0632e21c7e7" name="string fio" direction="In" isUnique="false">
+                  <elementDefinition Id="bb72bd15-d993-4fb5-bf8e-116aba4c1446" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="99f34c53-e926-4313-950a-f13ccc655f49" name="string login" direction="In" isUnique="false">
+                  <elementDefinition Id="46e99fb1-a3f9-45d1-8cbb-6a809f80ad3c" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ca1df218-9390-4742-b69b-5dfad228d0a8" name="string password" direction="In" isUnique="false">
+                  <elementDefinition Id="ae96d2f4-1d96-4e37-b147-daa2b900a6d7" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e1cf7e8e-de3d-4840-8aba-89f19c6dc9cd" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e3c522c3-93d1-4403-8582-98942a3da355" name="List&lt;RentalDisks&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;RentalDisks&gt;">
+        <elementDefinition Id="ba2b49cd-ab14-4e8d-a583-dfc286ea278b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f943abaa-5237-44dc-902e-a7a6b03ca0a3" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="9e9db952-7e22-4ea4-9906-4a8bdf0be6b9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="49d569d3-b24b-4317-8546-a2ea1abc0f52" name="Customer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dcb43084-4855-4c99-a8e8-53bfcff724d5" />
+        <ownedAttributesInternal>
+          <property Id="353c5d9e-f080-4600-8da1-d76b897e7155" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="38946dca-ae92-4537-969d-6f00b1644608" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e1cf7e8e-de3d-4840-8aba-89f19c6dc9cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="f164347f-6ca2-4345-8b2b-55cc8f09def0" name="Password" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9e8f3b6e-b9d7-4d4c-8828-0f3a0aa39c83" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e1cf7e8e-de3d-4840-8aba-89f19c6dc9cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="ffbe9db4-6649-4125-b7ea-70d6443e4b45" name="RentalDisks" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a2896e80-87b6-434f-90d6-a6c5fe66a54e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e3c522c3-93d1-4403-8582-98942a3da355" LastKnownName="List&lt;RentalDisks&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="2cd1f049-7675-44ef-b40a-eeb2af47fc9d" name="usingCount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="03803c9e-f55b-46e0-9e80-b422ad2bfdb0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f943abaa-5237-44dc-902e-a7a6b03ca0a3" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c0636cfe-914c-4a3c-b03f-b582857259f2" name="Customer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="04782d40-7309-42e7-9104-82e7144e1cd4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8ea7edda-e5a7-460b-8870-2e79c3f8a555" name="string login" direction="In" isUnique="false">
+                  <elementDefinition Id="735d4919-2631-4c01-b576-3f4d4d98c408" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="243f2bba-7822-4c52-80d5-9d2b5adaf474" name="string password" direction="In" isUnique="false">
+                  <elementDefinition Id="49421206-5ab7-475b-9ca2-c6dd15bc1a78" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5de54e08-25bc-4e0c-a0a2-bf6560d38b40" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="9e9db952-7e22-4ea4-9906-4a8bdf0be6b9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="933e532a-09e7-40f3-808c-dd76d9b4018c" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
+        <elementDefinition Id="f0714a07-1259-4e3d-81ee-6b4a3625f94b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="585fd704-f24e-4d6d-8c32-d9a5b67c54b3" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="724c2bc0-d517-4ba9-9aa4-2d73253f79a3" name="Disk" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="396fe49b-99e0-4ba6-ab0f-ada906327b8e" />
+        <ownedAttributesInternal>
+          <property Id="11715198-f4cf-428b-94bf-41d57cdc343d" name="Count" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9ff87fa9-09e7-4803-8b24-58c1c1e23841" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5de54e08-25bc-4e0c-a0a2-bf6560d38b40" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="4ba25871-c622-4f4f-924e-74070263a7d6" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aa6f2874-8852-4fd4-8e5e-1df3dc315232" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="933e532a-09e7-40f3-808c-dd76d9b4018c" LastKnownName="Double" />
+            </type_NamedElement>
+          </property>
+          <property Id="d7715978-2844-4d91-bc42-be04b9cbfb2e" name="Year" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c5e5ec55-2c79-462d-8bc1-afb456d53640" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5de54e08-25bc-4e0c-a0a2-bf6560d38b40" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="4b8af69f-cace-457d-bf46-c2575a22e1ce" name="Genre" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c97adaa0-d42a-410d-88be-e2e6ddee1339" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="585fd704-f24e-4d6d-8c32-d9a5b67c54b3" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="58d1c675-d761-4644-9617-8b24e2c5c309" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e64981fb-107c-4f25-9a83-2e5d599df80f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="585fd704-f24e-4d6d-8c32-d9a5b67c54b3" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e3ac75c8-3d99-4919-ad19-4d7413bd8bff" name="Disk" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ce81fc82-562c-4556-b3c7-3ce229ea79bd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="85917b5a-6c10-4810-b01a-2984e171ee60" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="ea91431d-8481-43c5-b8b1-957afb8d036e" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5a1e8087-1e24-4941-a729-e74072bda395" name="string genre" direction="In" isUnique="false">
+                  <elementDefinition Id="f3db4d16-ff05-484d-9d49-b2595bc6c02f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d34eca8e-c168-4821-9d54-3cd22c36007b" name="int year" direction="In" isUnique="false">
+                  <elementDefinition Id="ff1cc046-691c-4a68-b3de-0bc78bd2a833" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2ae30d0f-b1d8-4ac0-bf0d-66616f83bc52" name="int count" direction="In" isUnique="false">
+                  <elementDefinition Id="74b3a407-dc28-4951-a0f6-4ad353521375" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="50e27ac0-d522-47dc-9d49-550bb1a1a3b6" name="double price" direction="In" isUnique="false">
+                  <elementDefinition Id="5edc5ad8-cd22-437f-88a5-deea8a1e9849" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ee32bdee-5a91-4166-96b8-907e25670c5f" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2551531c-24b0-46b0-8dec-1f63e2d76bd9" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="9e9db952-7e22-4ea4-9906-4a8bdf0be6b9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="867b48b6-3843-44a0-b90b-f219759196c4" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="5f1cccb3-634b-4d02-b3bc-3f3ab6907a51" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6320669c-ab24-4e96-8c48-ce563fc53d09" name="Rental Disk" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e0c02bed-7095-4505-9b62-f81e7300a3f2" />
+        <suppliersInternal>
+          <dependency Id="b25ed24b-dd0e-4dc3-ae5e-19f5a2d403a4">
+            <classMoniker Id="724c2bc0-d517-4ba9-9aa4-2d73253f79a3" LastKnownName="Disk" />
+            <elementDefinition Id="52a24dd2-c3f3-40be-a5f3-6a224f668c59" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="d8904972-15fe-4cef-bbba-ad0b64ac2af7" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2d0183dc-15b3-49f4-bf70-652c4ec16425" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee32bdee-5a91-4166-96b8-907e25670c5f" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="79c2b443-eb28-4610-8d5f-0285a9389a7e" name="Gener" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="686cc844-c7bc-4bea-8b2f-afe2fa1ff32f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee32bdee-5a91-4166-96b8-907e25670c5f" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="4de646b7-3e73-41be-a470-7a362dd093b7" name="Year" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="07a893c7-7ccb-4a1a-9c1e-fc6f86001e05" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2551531c-24b0-46b0-8dec-1f63e2d76bd9" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="4fb9fbc3-3e99-4d32-831e-6ad44f7e5d2f" name="BringBackDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b1a9dd89-595f-4bb3-96b6-057708a6242b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="867b48b6-3843-44a0-b90b-f219759196c4" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e018c62f-0fbd-4a8f-928e-46a43076b3da" name="RentalDisk" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="044fbd45-e5d7-45ba-9149-fac01c730b5f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6af82c55-a04f-4c69-8dde-51804044529e" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="4af3b7f1-d692-4ff2-b945-a76c95f52a66" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="75441798-bb71-49dd-a6f4-bc96ed321019" name="string genre" direction="In" isUnique="false">
+                  <elementDefinition Id="e1f5e713-2e41-481a-aa87-4cf07d1bc9cd" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6370c46c-2f56-4f42-991d-eb21bede4797" name="int year" direction="In" isUnique="false">
+                  <elementDefinition Id="897a7887-16b6-49e6-b985-3242f1d3ea8c" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9e03bae9-30e8-4dab-a309-0648571f515c" name="DateTime bbd" direction="In" isUnique="false">
+                  <elementDefinition Id="f91891f1-b063-4448-b5ab-7f5b831a7694" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="62373318-bf55-42e4-9f30-45d66b222ec5" name="List&lt;Disk&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Disk&gt;">
+        <elementDefinition Id="3f9e5182-50d9-4440-9280-d337c89c520a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="635058bd-54d6-4f83-b2d3-e633dd6ccc02" name="List&lt;string&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;string&gt;">
+        <elementDefinition Id="2a8cf97d-bd16-43e5-9711-1597c824f3e3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="28e900c8-b313-4725-8989-9b03e21428a9" name="List&lt;Customer&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Customer&gt;">
+        <elementDefinition Id="46f5e0e7-c2e7-43bd-bfe2-85b5d6edbcdd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9650dc5d-52df-4c76-ab1b-d95db5bec992" name="List&lt;Admin&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Admin&gt;">
+        <elementDefinition Id="dd817f0d-c47f-407d-8029-e4fd3e8342f0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7c495412-4a2c-4724-ba01-a70eba8b136e" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="28357b11-4bbd-4e25-a7ba-7079935b6843" />
+        <targetEnds>
+          <association Id="64ccf198-1915-4f51-b8c3-5b507f5903b5" isDerived="false" sourceEndRoleName="Program" targetEndRoleName="Admin" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9b2e3585-8143-49bb-aa4a-3f7b21bdabd2" LastKnownName="Admin" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6fbfa944-fe71-4c63-9f3b-a59e251278af" name="Program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="85fa9bcf-3adf-4f0f-a7c1-50511d081aad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="347fa53c-40c7-40bf-ae5d-f1224c8b99e9" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fcade597-55fe-448d-92fc-969b4240b68c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b2706b1a-78ce-4147-9844-226a60ef1c0d" />
+          </association>
+          <association Id="94e52ed0-5997-4334-bc94-8ee5df2ae305" isDerived="false" sourceEndRoleName="Program" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="49d569d3-b24b-4317-8546-a2ea1abc0f52" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc793b66-86e3-4ac6-8d28-7c53ca697850" name="Program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="98585f4c-c1f5-416d-a464-27f1643ffb3a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01594197-315a-4de5-bfc1-9eed46597d00" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1383e77e-870b-4e43-9e5c-8a89e785364e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e2d3f83c-f193-48e7-87a5-b03543490645" />
+          </association>
+          <association Id="afae977e-e32f-4275-9647-bb532cedd483" isDerived="false" sourceEndRoleName="Program" targetEndRoleName="Disk" isLeaf="false" isAbstract="false">
+            <classMoniker Id="724c2bc0-d517-4ba9-9aa4-2d73253f79a3" LastKnownName="Disk" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c25186d7-268c-45f5-b0fe-d68d1a3fe860" name="Program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1ed46ed7-3e42-4e3b-ac8d-80202f9836a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="373e7103-04de-4da7-8cdb-475b4f9f5896" name="Disk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="289e2614-b91d-4464-af10-25ef7a719c82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f55150a3-e01e-4e5c-b40e-763922ed2e0d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9b55d3fc-5ddd-4b8e-9dec-27e3e09593e5" name="DiskList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5c769c0f-fd04-4cd7-b153-e6f4c2b04a07" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="62373318-bf55-42e4-9f30-45d66b222ec5" LastKnownName="List&lt;Disk&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="ef0c31bd-b943-44fd-8bd3-8e63bc03ba64" name="RequestList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="36eafadd-a966-45fa-8718-4e2ae9924733" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="635058bd-54d6-4f83-b2d3-e633dd6ccc02" LastKnownName="List&lt;string&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="7d49e55f-8134-46e6-a4f9-12798108ab35" name="CustomerList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cd669651-7c14-421f-80ba-6240266fb2d7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="28e900c8-b313-4725-8989-9b03e21428a9" LastKnownName="List&lt;Customer&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="e7de8e1c-24ab-47b4-a5de-3b14c53fc4cc" name="AdminList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eae28245-5a4e-4f81-8e09-6500ed5ac5dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9650dc5d-52df-4c76-ab1b-d95db5bec992" LastKnownName="List&lt;Admin&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3e985935-e253-46d4-8bf5-38f4d5ef19ed" name="LoadFromFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="da81dd40-327f-4b00-aba0-6b492823daf9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a653bc82-303f-4d58-bac4-a8be34c00817" name="string filename" direction="In" isUnique="false">
+                  <elementDefinition Id="c927c0e9-08ab-4589-96a6-05645214f943" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ab51cc4f-e692-4b83-94d1-3e53ed153c28" name="SaveToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="97b9ab69-7cb9-4463-8178-4268bb008f70" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c9138a30-e0b7-4953-9235-0dd97f018724" name="string filename" direction="In" isUnique="false">
+                  <elementDefinition Id="780a6d5d-6311-4981-b640-604cbe81008c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a195ddec-e199-4fb5-b608-afc1edb782a5" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c852e83e-6a75-4705-90a0-fbb8f51c1da6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="af9e4d14-36a9-4468-bf1c-e6f87980d32f" name="ClassDiagram">
+    <elementDefinition Id="47516368-5e28-436d-ba47-bb29ea4937aa" />
+  </package>
+</logicalClassDesignerModel>
